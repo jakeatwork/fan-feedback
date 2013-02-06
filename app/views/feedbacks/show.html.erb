@@ -1,0 +1,11 @@
+<br><a id="smaller">
+	<%= @feedback.survey_name %>
+</a>
+<p>
+  <%= @feedback.comments %>
+</p>
+
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>
