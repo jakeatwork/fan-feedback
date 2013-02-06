@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130206011600) do
 
   create_table "feedbacks", :force => true do |t|
-    t.string   "comments"
+    t.text     "comments"
     t.string   "survey_name"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
