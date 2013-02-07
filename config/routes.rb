@@ -3,7 +3,13 @@ FanFeedback::Application.routes.draw do
 
   get "random/create"
 
-  resources :feedbacks
+  resources :feedbacks do
+    collection do
+      get "random"
+    end
+  end
+  
+  # get "feedback/random" t
 
 
   # The priority is based upon order of creation:

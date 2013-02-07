@@ -14,10 +14,19 @@ class FeedbacksController < ApplicationController
   # GET /feedbacks/1.json
   def show
     @feedback = Feedback.find(params[:id])
-
+    # @random = true if params[:id] == "random"
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @feedback }
+    end
+  end
+  
+  # Randomizer
+  def random
+    @feedback = Feedback.offset(Random.rand(Feedback.count)).first
+    @refresh = true
+    respond_to do |format|
+      format.html {render :show}
     end
   end
   
