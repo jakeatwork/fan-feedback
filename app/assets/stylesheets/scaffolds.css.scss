@@ -6,11 +6,16 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
+p, ol, ul {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 115px;
   line-height: 115px;
   font-weight: bold;
+}
+
+td, th {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
 }
 
 br {
@@ -25,9 +30,9 @@ pre {
 }
 
 a {
-  color: #000;
+  color: blue;
   &:visited {
-    color: #666;
+    color: #fff;
   }
   &:hover {
     color: #fff;
@@ -45,10 +50,16 @@ div {
   color: green;
 }
 
-#smaller {
+#survey_name {
   color: orange;
   font-size: 48px;
   font-weight: bold;
+}
+
+#full_list {
+  color: #000;
+  background-color: #fff;
+  font-size: 48px;
 }
 
 .field_with_errors {

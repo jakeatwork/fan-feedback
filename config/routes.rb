@@ -1,4 +1,8 @@
 FanFeedback::Application.routes.draw do
+  get "random/new"
+
+  get "random/create"
+
   resources :feedbacks
 
 

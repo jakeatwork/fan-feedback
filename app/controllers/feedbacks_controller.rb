@@ -21,24 +21,6 @@ class FeedbacksController < ApplicationController
     end
   end
   
-  
-  
-  
-  
-  
-  # RANDOM GET
- # def random
- #   @feedback = Feedback.find(params[:id])
- #   offset = rand(Feedback.count)
- #   rand_record = Feedback.first(:offset => offset)
- # end
-  
-  
-  
-  
-  
-  
-
   # GET /feedbacks/new
   # GET /feedbacks/new.json
   def new
