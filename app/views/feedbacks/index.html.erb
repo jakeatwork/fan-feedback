@@ -13,7 +13,10 @@
 <% @feedbacks.each do |feedback| %>
   <tr>
     <td><%= feedback.comments %></td>
-    <td><%= feedback.survey_name %></td>
+    <td><%= feedback.issue %></td>
+    <td><%= feedback.venue %></td>
+    <td><%= feedback.event %></td>
+    <td><%= feedback.eventdate %></td>
     <td><%= link_to 'Show', feedback %></td>
     <td><%= link_to 'Edit', edit_feedback_path(feedback) %></td>
     <td><%= link_to 'Destroy', feedback, method: :delete, data: { confirm: 'Are you sure?' } %></td>
